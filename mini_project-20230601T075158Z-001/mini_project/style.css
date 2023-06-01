@@ -1,0 +1,440 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+  
+}
+.navbar
+{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+}
+.logo
+{
+  
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+#logo
+{
+  width: 190px;
+  height: fit-content;
+}
+.navbar .nav
+{
+    display: flex;
+}
+
+.nav  a
+{
+    margin-top: 50px;
+    text-decoration: none;
+    margin-left: 120px;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+.nav a :hover
+{
+    color: blue;
+}
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: -20px;
+  margin-left: 20%;
+}
+.nav-link-ltr:hover::before {
+  width: 50%;
+}
+
+.nav-link-fade-up::before {
+  width: 50%;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.nav-link-fade-up:hover::before {
+  bottom: 10px;
+  opacity: 1;
+}
+
+.nav-link-grow-up::before {
+  height: 0%;
+  width: 50%;
+  bottom: 0px;
+}
+
+.nav-link-grow-up:hover::before {
+  height: 2px;
+}
+#page
+{
+  
+  position: relative;
+  margin-top: 2%;
+  
+}
+#text
+{
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  color:black;
+  font-size: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.image-slideshow {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: 600px;
+  opacity: .9;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.btn
+{
+  width: 250px;
+  height: 50px;
+  margin-left: 40%;
+  cursor: pointer;
+  background-color: rgb(0,255,0);
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#login
+{
+width: 30px;
+height: 30px;
+margin-top: 4.5%;
+margin-left: 55%;
+position: absolute;
+}
+#user
+{
+width: 20px;
+height: 20px;
+margin-top: 4.5%;
+margin-left: 73%;
+position: absolute;
+}
+#btn
+{
+  position: absolute;
+  bottom: 20px;
+}
+.btn:hover
+{
+  background-color:transparent;
+}
+.about
+{
+
+    background-color: #252729;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:2%;
+    color:whitesmoke;
+    background-size:contain;
+    align-items: center;
+}
+.contactus
+{
+
+    background-color: #252729;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:2%;
+    color:white;
+    background-size: contain;
+    height: 250px;
+
+
+}
+.contactus a
+{
+  text-decoration: none;
+  color: white;
+}
+.icon
+{
+    width: 30px;
+    height: 30px;
+    float:left;
+    border-radius: 45px;
+    margin: 10px  10px 5px;
+
+}
+.faqs
+{
+
+  font-size:larger;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.faqs a
+{
+  margin-left: 50%;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.faqs a:hover
+{
+  color: blue;
+}
+
+
+/* style for profile page */
+
+
+#location
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin-left: 2%;
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
+}
+#location option:hover
+{
+  background-color:rgb(12, 184, 12);
+}
+
+.details
+{
+
+  padding: 2%;
+  margin-left: 3%;
+  margin-right:3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: black;
+  -webkit-box-shadow: -2px 1px 21px 4px rgba(218,222,230,1);
+-moz-box-shadow: -2px 1px 21px 4px rgba(218,222,230,1);
+box-shadow: -2px 1px 21px 4px rgba(218,222,230,1);
+ 
+}
+.details .doc a  
+{
+  color: black;
+  text-decoration: none;
+}
+
+.details:hover
+{
+  -webkit-box-shadow: -2px 1px 21px 4px rgba(166,169,176,1);
+  -moz-box-shadow: -2px 1px 21px 4px rgba(166,169,176,1);
+  box-shadow: -2px 1px 21px 4px rgba(166,169,176,1);
+}
+.doc
+{
+  
+  display: flex;
+  padding-bottom: 3%;
+  text-decoration: none;
+}
+.doc img /* profile */
+{
+  border-radius: 10px;
+  width: 240px;
+  height: 200px;
+  float: left;
+}
+
+.doc .info
+{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 3%;
+  width: 100%;
+
+}
+.doc .info img 
+{
+  width: 30px;
+  height: 30px;
+  padding-right: 1%;
+  
+}
+.doc .info h4
+{
+  background-color:rgb(12, 184, 12);
+  width:27px;
+  height: 4%;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+}
+.doc .info .ratings
+{
+  width: 15%;
+  margin-left: 36px;
+  margin-top: -25px;
+}
+.ph_no
+{
+  height: 40px;
+  width: 170px;
+  background-color:rgb(12, 184, 12);
+  border-radius: 5px;
+  border-color: aliceblue;
+  font-size: larger;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.ph_no:hover
+{
+opacity: .9;
+}
+.ph_no::before
+{
+  content: "📞";
+}
+.consult
+{
+  height: 40px;
+  width: 170px;
+  border-color: blue;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  color:steelblue;
+}
+.consult:hover
+{
+  background-color:lightgray ;
+  opacity: .9;
+}
+
+
+
+/*doctor's address */
+.address
+{
+  border-radius: 5px;
+  border-color:black;
+  margin-left:20%;
+  width: 200px;
+  height: max-content;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.features
+{
+  
+ 
+  height: fit-content;
+  transition: 1s;
+  margin-left: 13px;
+}
+
+.features:hover
+{
+  background-color: darkgrey;
+}
+
+.enquiry
+{
+  margin-left: 73%;
+  margin-top: -20%;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 300px;
+  border-color: black;
+}
+.enquiry .en
+{
+  background-color: rgb(240, 240, 240);
+  padding: 7% 7%;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.enquiry .en:hover
+{
+  -webkit-box-shadow: -2px 1px 21px 4px rgba(166,169,176,1);
+  -moz-box-shadow: -2px 1px 21px 4px rgba(166,169,176,1);
+  box-shadow: -2px 1px 21px 4px rgba(166,169,176,1);
+}
+.enquiry p
+{
+  font-size:larger;
+}
+.enquiry button
+{
+  background-color: rgba(77, 5, 232);
+  color: white;
+  width:250px;
+  height: 50px;
+  border-radius: 3px;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.enquiry button:hover
+{
+  opacity: .8;
+}
+.enquiry button a{
+  color: white;
+  text-decoration: none;
+}
+
+.ans
+{
+  margin-left: 5%;
+}
+.appointment
+{
+  margin-bottom: 20%;
+  margin-top: 10%;
+  margin-left: -67%;
+  position: relative;
+}
